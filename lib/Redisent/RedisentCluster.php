@@ -7,7 +7,9 @@
  * @package Redisent
  */
 
-require_once dirname(__FILE__) . '/Redisent.php';
+if(!class_exists('Redisent')) {
+	require_once dirname(__FILE__) . '/Redisent.php';
+}
 
 /**
  * A generalized Redisent interface for a cluster of Redis servers
